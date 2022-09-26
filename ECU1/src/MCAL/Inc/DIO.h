@@ -41,6 +41,7 @@ typedef struct
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : DIO_config_t * config
+ * 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -53,9 +54,22 @@ void DIO_init(DIO_config_t * config);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin the pin number
- *                    port the port number
- *                    mode the state of pin input or output
+ * \Parameters (in) :
+ *            name  : pin 
+ *      description :Specifies Pin number
+ *            type  :Pin_Num
+ *            Range :0 -->7
+ *            
+ *            name  : port 
+ *      description :Specifies Port number
+ *            type  :Port_Num
+ *            Range :0 -->7
+ *            
+ *            name  : mode 
+ *      description :Specifies Mode number
+ *            type  :Mode
+ *            Range :0 -->1
+ *             
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -84,8 +98,17 @@ void DIO_setPinValue(Pin_Num pin , Port_Num port , uint8 value);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin the pin number
- *                    port the port number
+ * \Parameters (in) : 
+  *            name  : pin 
+ *      description :Specifies Pin number
+ *            type  :Pin_Num
+ *            Range :0 -->7
+ *            
+ *            name  : port 
+ *      description :Specifies Port number
+ *            type  :Port_Num
+ *            Range :0 -->7 
+ * 
  * \Parameters (out): None
  * \Return value    : uint8 the value on pin
  *****************************************************************/

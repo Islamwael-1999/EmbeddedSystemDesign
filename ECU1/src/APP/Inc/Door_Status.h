@@ -14,7 +14,12 @@ extern Door_State currentDoorState;
  * 
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : currentDoorState the current Door state reading
+ * \Parameters (in) : 
+ *            name  : currentDoorState 
+ *      description : variable to save the Door State opened if 0 or closed if 1 
+ *            type  :uint8
+ *            Range :0 -->1
+ *            
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

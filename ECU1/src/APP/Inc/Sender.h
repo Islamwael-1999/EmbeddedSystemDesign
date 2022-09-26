@@ -9,8 +9,11 @@
  * \Description     : Sends Sensor's data provided in array
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : currentSwitchState the current switch state reading
- *                    Switch_ID the switch number 
+ * \Parameters (in) : 
+ *            name  : data 
+ *      description : Variable that holds data value to be sent 
+ *            type  :uint8
+ *            Range :0 -->255                   
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -23,8 +26,7 @@ void Sender_sendData(uint8 * data);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : pin switch pin number
- *                    port switch port number
+ * \Parameters (in) : None
  * \Parameters (out): None
  * \Return value    : Switch id
  *****************************************************************/

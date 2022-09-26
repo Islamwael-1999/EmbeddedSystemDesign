@@ -11,6 +11,10 @@ extern uint32 currentSpeed;
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : uint32 * currSpeed
+ *            name  : currSpeed 
+ *      description : Variable used to save current speed 
+ *            type  :uint8
+ *            Range :0 -->255
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

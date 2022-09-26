@@ -24,7 +24,7 @@ void LightSw_init(void);
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : None
- * \Parameters (out): None
+ * \Parameters (out): LightSW_State
  * \Return value    : Door_State the sensor reading (open/close)
  *****************************************************************/
 LightSW_State LightSW_getLightSenReading(void);

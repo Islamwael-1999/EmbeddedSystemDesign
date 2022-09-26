@@ -24,7 +24,7 @@ void Door_init(void);
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : None
- * \Parameters (out): None
+ * \Parameters (out): Door_State
  * \Return value    : Door_State the sensor reading (open/close)
  *****************************************************************/
 Door_State Door_getSensorReading(void);
