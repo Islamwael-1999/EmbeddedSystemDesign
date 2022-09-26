@@ -21,6 +21,10 @@ void CAN_init(void);
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : value the word to be written on CAN bus
+ *            name  : value 
+ *      description : Variable contains data to be sent by can 
+ *            type  :uint8
+ *            Range :0 -->255
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
@@ -33,7 +37,11 @@ void CAN_Send(uint32 value);
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
  * \Parameters (in) : None
- * \Parameters (out): None
+ * \Parameters (out): 
+ *            name  : data 
+ *      description : returns data received from the CAN bus
+ *            type  :uint8
+ *            Range :0 -->255
  * \Return value    : word recieved on CAN bus
  *****************************************************************/
-uint32 CAN_recieve(void);
+uint32 CAN_recieve();

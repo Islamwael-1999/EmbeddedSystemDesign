@@ -29,7 +29,11 @@ void Buzzer_init(Buzzer_config_t * config);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : buzzerID the buzzer number
+ * \Parameters (in) :
+ *           name   : buzzerID 
+ *      description : Chooses buzzer number to set High 
+ *            type  :uint8
+ *            Range :0 -->8 
  * \Parameters (out): None
  * \Return value    : None 
  *****************************************************************/
@@ -42,7 +46,11 @@ void Buzzer_setON(uint32 buzzerID);
  *                   
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : buzzerID the buzzer number
+ * \Parameters (in) : 
+ *           name   : buzzerID 
+ *      description : Chooses buzzer number to set Low 
+ *            type  :uint8
+ *            Range :0 -->8 
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/

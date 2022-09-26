@@ -129,8 +129,18 @@ void TIMER_Init(const TIMER_ConfigType *ConfigPtr);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Channel channel to disable its interrupts
- * \Parameters (out): None
+ * \Parameters (in) : Channel 
+ *             name : Channel 
+ *      description  :choose channel to disable its interrupts
+ *              type:TIMER_ChannelType
+ *             range: 0 --> 11
+ *
+ *             name : value 
+ *      description  :choose channel to disable its interrupts
+ *              type:TIMER_ValueType
+ *             range: 0 --> 1
+ * 
+ *  \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
 
@@ -142,7 +152,11 @@ void TIMER_StartTimer(TIMER_ChannelType Channel, TIMER_ValueType Value);
  *
  * \Sync\Async      : Synchronous
  * \Reentrancy      : Non Reentrant
- * \Parameters (in) : Channel the channel number to stop
+ * \Parameters (in) : 
+ *             name : Channel 
+ *      description :chooses the channel number to stop
+ *              type:TIMER_ChannelType
+ *             range: 0 --> 11
  * \Parameters (out): None
  * \Return value    : None
  *****************************************************************/
